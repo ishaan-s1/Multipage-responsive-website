@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(204, 100, 100), rgb(142, 226, 212), rgb(81, 216, 93));
+}
+
+:root {
+    --navbar-height: 59px
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    top: 0;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* navigation bar: logo and img  */
+#logo {
+
+    margin: 20px 30px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    /* background: url('bg.jpg') no-repeat center center/cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+}
+
+/* service content  */
+#services {
+    margin-top: 0px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid red; */
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background-color: rgba(204, 158, 72, 0.795);
+
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 18px;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 15px;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background: brown;
+    color: black;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.h-primary center {
+    font-size: 1.2rem;
+}
+
+#details-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#details-box input {
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+#details-box form {
+    width: 40%;
+}
+
+#details-box label {
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times;
+}

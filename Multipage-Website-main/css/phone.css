@@ -1,0 +1,25 @@
+/* navigation bar */
+#navbar{
+    flex-direction: column;
+}
+/* home sectiom */
+#home{
+    height: 200px;
+    padding: 3px 12px;
+}
+#home p{
+    /* font-size: 13px; */
+}
+/* services section */
+#services{
+    flex-direction: column;
+}
+#services .box img{
+    height: 120px;
+    width: 120px;
+}
+/* sign up section  */
+
+.h-primary{
+    /* font-size: 26px; */
+}
